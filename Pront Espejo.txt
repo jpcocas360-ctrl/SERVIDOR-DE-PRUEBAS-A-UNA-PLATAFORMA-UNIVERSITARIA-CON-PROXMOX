@@ -1,0 +1,23 @@
+Alcance de este diagnóstico. En esta conversación solo veo tres aportes tuyos: el informe ya redactado, el texto del diagnóstico que pediste agregar como comentario y este prompt. No veo las capturas de las VM, la auditoría ni tus preguntas previas, así que no puedo confirmar por mi cuenta lo que ese texto dice que hiciste. Lo trato como información que tú me diste, no como algo que haya observado. Tampoco hay aquí razonamientos, dudas ni correcciones tuyas sobre el contenido técnico, y no puedo inventarlos.
+
+1. Fortalezas
+
+Sabes qué quieres del trabajo: un informe útil para decisiones de TI, con secciones definidas y una guía de estudio de diez preguntas.
+Revisas el proceso, no solo el producto. Pedir este diagnóstico sobre cómo aprendes es una buena señal de autoevaluación.
+Según el diagnóstico que pegaste, reuniste y corregiste datos del servidor. Eso queda como declaración tuya, no como algo comprobado aquí.
+
+2. Debilidades
+
+No hay evidencia en esta conversación de que dominaras los conceptos del Hito 3: snapshot frente a backup, quórum, HA, thin provisioning, KVM frente a LXC.
+Las cifras del diseño (48 GiB y 8 vCPU para producción, 24 GiB y 4 vCPU por docente, RPO de 24 horas, RTO de 8 horas) son propuestas mías. No hay rastro de que las calcularas, las cuestionaras o las compararas con alternativas.
+El informe tiene datos sin verificar: tipo de DIMM instalado, discos físicos y bahías libres, tamaños de disco de varias VM. Las compras propuestas dependen de eso. Esto limita el diagnóstico; no prueba descuido tuyo.
+Los precios de RAM y SSD vienen de ofertas del extranjero y no consideran impuestos ni disponibilidad local.
+
+3. Criterio técnico
+No puedo calificarlo. Para hacerlo necesitaría verte defender una asignación, detectar un error o elegir entre dos opciones. Dos puntos del informe sirven para tu autoexamen. Uno es la sobreasignación de vCPU: 8 VM × 6 vCPU son 48 vCPU frente a 24 hilos, una relación de 2:1. El otro es el espacio libre: unos 13,92 GB, muy por debajo del margen recomendado.
+
+4. Tres acciones para el Hito 3
+
+Sin mirar el informe, calcula por escrito la RAM, las vCPU y el disco asignados hoy y lo que pasaría con las ocho VM encendidas. Luego compara con la sección 1.2.
+Responde en tus palabras por qué un snapshot no reemplaza un backup y qué haría falta para migración y HA (nodos, quórum, almacenamiento accesible). Verifica con la documentación de Proxmox.
+Elige una VM de producción y una de laboratorio. Propón CPU, RAM y disco, y explica cómo medirías el consumo real y qué harías si lo superan.
