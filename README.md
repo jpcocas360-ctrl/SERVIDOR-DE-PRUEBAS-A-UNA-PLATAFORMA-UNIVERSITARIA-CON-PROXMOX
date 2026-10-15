@@ -4,7 +4,7 @@ Este repositorio reúne el diagnóstico del servidor del laboratorio 302 y una p
 
 ## Documentos
 
-- [Informe técnico de la plataforma Proxmox VE](Informe%20t%C3%A9cnico%20plataforma%20Proxmox%20VE,%20Laboratorio%20302.docx): diagnóstico, arquitectura propuesta, distribución de recursos, ampliaciones, operación, recuperación, evolución y guía de estudio del Hito 3.
+- [Informe técnico de la plataforma Proxmox VE](Informe%20t%C3%A9cnico%20plataforma%20Proxmox%20VE,%20Laboratorio%20302.pdf): diagnóstico, arquitectura propuesta, distribución de recursos, ampliaciones, operación, recuperación, evolución y guía de estudio del Hito 3.
 - [Diagnóstico del proceso de aprendizaje](Pront%20Espejo.txt): reflexión sobre fortalezas, aspectos por reforzar y acciones de preparación para el Hito 3.
 
 ## Estado observado
